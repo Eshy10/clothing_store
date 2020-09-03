@@ -56,12 +56,12 @@ class App extends React.Component {
 
 }
 
-const matchStateProps = ({ user }) => ({
+const mapStateProps = ({ user }) => ({
   currentUser: user.currentUser
 })
 
-const matchDispatchProps = dispatch => ({
+const mapDispatchProps = dispatch => ({
 setCurrentUser: user => dispatch(setCurrentUser(user))
   })
 
-export default connect(matchStateProps, matchDispatchProps)(App);
+export default connect(mapStateProps, mapDispatchProps)(App);
