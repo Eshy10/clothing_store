@@ -60,8 +60,8 @@ const matchStateProps = ({ user }) => ({
   currentUser: user.currentUser
 })
 
-const matchDispathProps = dispatch => ({
+const matchDispatchProps = dispatch => ({
 setCurrentUser: user => dispatch(setCurrentUser(user))
   })
 
-export default connect(matchStateProps, matchDispathProps)(App);
+export default connect(matchStateProps, matchDispatchProps)(App);
