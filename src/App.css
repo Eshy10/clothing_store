@@ -1,11 +1,13 @@
 body {
   font-family: 'Open Sans Condensed';
   padding: 20px 60px;
+  background-color: rgb(56, 54, 54);
+  color: white;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 * {
