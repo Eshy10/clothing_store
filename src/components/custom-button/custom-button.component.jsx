@@ -1,15 +1,10 @@
 import React from 'react';
-import './custom-button.styles.scss';
+import { CustomButtonContainer } from './custom-button.styles'
 
-const CustomButton = ({children, isGoogleSignIn, inverted, ...OtherProps}) => (
-    <button className =
-    { 
-    `${inverted ? 'inverted' : ''} 
-    ${isGoogleSignIn ? 'google-sign-in' : ''} 
-    custom-button`} 
-    {...OtherProps}>
+const CustomButton = ({children, ...props}) => (
+    <CustomButtonContainer {...props}>
     {children}
-    </button>
+    </CustomButtonContainer>
 )
 
 
